@@ -39,6 +39,7 @@ class Node(object):
 class LinkedList:
     """
     An object used to organize a collection of nodes and their respective pointers (connections) to other nodes
+    NOTE: This is a doubly linked list implementation
     """
     def __init__(self):
         # start with an empty list of size 0
@@ -82,9 +83,6 @@ class LinkedList:
         # cut the connection the previous node has with the node to be deleted, doing so deletes the node
         prev_node.next = None
         self.size -= 1
-
-
-
 
 if __name__ == "__main__":
     x = LinkedList()
